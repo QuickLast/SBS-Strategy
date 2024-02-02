@@ -1,0 +1,15 @@
+﻿<Window x:Class="SBS_Game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SBS_Game"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" WindowStyle="None" d:DesignHeight="1080" d:DesignWidth="1920" Background="DarkSlateGray">
+    <Window.Resources>
+        <FontFamily x:Key="dela" >Assets/Fonts/#dela</FontFamily>
+    </Window.Resources>
+    <Grid>
+        <Frame Source="Pages/WelcomePage.xaml" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>
