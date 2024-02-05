@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SBS_Game.Functions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,11 @@ namespace SBS_Game.Pages
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new ClassChoserPage());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new MainPage(CRUD.GetCharacterByName("Merlin")));
         }
     }
 }

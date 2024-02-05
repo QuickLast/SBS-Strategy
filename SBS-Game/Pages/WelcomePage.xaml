@@ -85,7 +85,7 @@
                 BorderThickness="2"
                 Foreground="Black"
                 Background="BlanchedAlmond"
-                FontSize="40">
+                FontSize="40" Click="Button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>

@@ -10,6 +10,6 @@
         <FontFamily x:Key="dela" >Assets/Fonts/#dela</FontFamily>
     </Window.Resources>
     <Grid>
-        <Frame Source="Pages/WelcomePage.xaml" NavigationUIVisibility="Hidden"></Frame>
+        <Frame Source="Pages/WelcomePage.xaml"></Frame>
     </Grid>
 </Window>

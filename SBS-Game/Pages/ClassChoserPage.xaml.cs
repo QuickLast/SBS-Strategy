@@ -1,7 +1,10 @@
-﻿using System;
+﻿using SBS_Game.Functions;
+using SBS_Game.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,7 +32,11 @@ namespace SBS_Game.Pages
         {
             ErrorTBk.Text = string.Empty;
             if (ErrorTBk.Text == String.Empty && NameTBk.Text != String.Empty)
-                NavigationService.Navigate(new MainPage("Warrior", NameTBk.Text.Trim()));
+            {
+                Character warrior = new Character(NameTBk.Text, "Warrior");
+                CRUD.CreateCharacter(warrior);
+                NavigationService.Navigate(new MainPage(warrior));
+            }
             else
                 ErrorTBk.Text = "Please enter a name of a character";
         }
@@ -38,7 +45,11 @@ namespace SBS_Game.Pages
         {
             ErrorTBk.Text = string.Empty;
             if (ErrorTBk.Text == String.Empty && NameTBk.Text != String.Empty)
-                NavigationService.Navigate(new MainPage("Wizard", NameTBk.Text.Trim()));
+            {
+                Character wizard = new Character(NameTBk.Text, "Wizard");
+                CRUD.CreateCharacter(wizard);
+                NavigationService.Navigate(new MainPage(wizard));
+            }   
             else
                 ErrorTBk.Text = "Please enter a name of a character";
         }
@@ -47,7 +58,11 @@ namespace SBS_Game.Pages
         {
             ErrorTBk.Text = string.Empty;
             if (ErrorTBk.Text == String.Empty && NameTBk.Text != String.Empty)
-                NavigationService.Navigate(new MainPage("Rogue", NameTBk.Text.Trim()));
+            {
+                Character rogue = new Character(NameTBk.Text, "Rogue");
+                CRUD.CreateCharacter(rogue);
+                NavigationService.Navigate(new MainPage(rogue));
+            }
             else
                 ErrorTBk.Text = "Please enter a name of a character";
         }

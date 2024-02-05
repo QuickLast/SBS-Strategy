@@ -65,19 +65,19 @@
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Choose your class (click on the image):</TextBlock>
-        <Image Source="\Assets\Images\warrior.png" Grid.Row="5" Grid.Column="3" Grid.RowSpan="10" Grid.ColumnSpan="5"
+        <Image Source="\Assets\Images\warrior1.png" Grid.Row="5" Grid.Column="3" Grid.RowSpan="10" Grid.ColumnSpan="5"
                MouseDown="Warrior_MouseDown"></Image>
         <TextBlock FontSize="60" Grid.Row="15" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Warrior</TextBlock>
-        <Image Source="\Assets\Images\wizard.png" Grid.Row="5" Grid.Column="8" Grid.RowSpan="10" Grid.ColumnSpan="5"
+        <Image Source="\Assets\Images\wizard1.png" Grid.Row="5" Grid.Column="8" Grid.RowSpan="10" Grid.ColumnSpan="5"
                MouseDown="Wizard_MouseDown"></Image>
         <TextBlock FontSize="60" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Wizard</TextBlock>
-        <Image Source="\Assets\Images\rogue.png" Grid.Row="5" Grid.Column="13" Grid.RowSpan="10" Grid.ColumnSpan="5"
+        <Image Source="\Assets\Images\rogue1.png" Grid.Row="5" Grid.Column="13" Grid.RowSpan="10" Grid.ColumnSpan="5"
                MouseDown="Rogue_MouseDown"></Image>
         <TextBlock FontSize="60" Grid.Row="15" Grid.Column="13" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Center" VerticalAlignment="Center" 
