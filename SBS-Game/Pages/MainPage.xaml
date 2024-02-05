@@ -57,64 +57,105 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="NameOfUnitTBk" FontSize="40" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
+        <TextBlock Name="NameOfUnitTBk" FontSize="40" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="12" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Name of your character: </TextBlock>
+                   Foreground="BlanchedAlmond">Name of your character:</TextBlock>
         <TextBlock Name="StrengthTBk" FontSize="30" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Strength: </TextBlock>
+                   Foreground="BlanchedAlmond">Strength:</TextBlock>
         <TextBlock Name="DexterityTBk" FontSize="30" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Dexterity: </TextBlock>
+                   Foreground="BlanchedAlmond">Dexterity:</TextBlock>
         <TextBlock Name="IntelligenceTBk" FontSize="30" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Intelligence: </TextBlock>
+                   Foreground="BlanchedAlmond">Intelligence:</TextBlock>
         <TextBlock Name="VitalityTBk" FontSize="30" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Vitality: </TextBlock>
+                   Foreground="BlanchedAlmond">Vitality:</TextBlock>
         <TextBlock Name="HealthTBk" FontSize="40" Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="OrangeRed">Health: </TextBlock>
+                   Foreground="OrangeRed">Health:</TextBlock>
         <TextBlock Name="ManaTBk" FontSize="40" Grid.Row="1" Grid.Column="17" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlueViolet">Mana: </TextBlock>
+                   Foreground="BlueViolet">Mana:</TextBlock>
         <TextBlock Name="PDamageTBk" FontSize="30" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Physical Damage: </TextBlock>
+                   Foreground="BlanchedAlmond">Physical Damage:</TextBlock>
         <TextBlock Name="ArmorTBk" FontSize="30" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Armor: </TextBlock>
+                   Foreground="BlanchedAlmond">Armor:</TextBlock>
         <TextBlock Name="MDamageTBk" FontSize="30" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Magical Damage: </TextBlock>
+                   Foreground="BlanchedAlmond">Magical Damage:</TextBlock>
         <TextBlock Name="MDefenseTBk" FontSize="30" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Magical Defense: </TextBlock>
+                   Foreground="BlanchedAlmond">Magical Defense:</TextBlock>
         <TextBlock Name="CrtChanseTBk" FontSize="30" Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Critical Chanse: </TextBlock>
+                   Foreground="BlanchedAlmond">Critical Chanse:</TextBlock>
         <TextBlock Name="CrtDamageTBk" FontSize="30" Grid.Row="13" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="BlanchedAlmond">Critical Damage: </TextBlock>
-        <TextBlock Name="LevelTBk" FontSize="60" Grid.Row="16" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
+                   Foreground="BlanchedAlmond">Critical Damage:</TextBlock>
+        <TextBlock Name="LevelTBk" FontSize="60" Grid.Row="16" Grid.Column="2" Grid.ColumnSpan="7" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
-                   Foreground="LightSeaGreen">Current Level: </TextBlock>
+                   Foreground="LightSeaGreen">Current Level:</TextBlock>
+        <TextBlock Name="XPTBk" FontSize="30" Grid.Row="17" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="2" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   FontWeight="Bold"
+                   Foreground="LightSeaGreen"></TextBlock>
         <Image Name="ClassImg"
                Source="\Assets\Images\warrior1.png" Grid.Row="4" Grid.Column="14" 
                Grid.RowSpan="10" Grid.ColumnSpan="5"></Image>
+
+        <Button Grid.Row="16" 
+                Grid.Column="10" 
+                Grid.ColumnSpan="5" 
+                Grid.RowSpan="3" 
+                Content="Add 1000XP"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                FontSize="30" Click="AddThousandButton_Click" HorizontalAlignment="Left" Margin="0,0,0,51" Width="349"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Row="16" 
+                Grid.Column="15" 
+                Grid.ColumnSpan="4" 
+                Grid.RowSpan="2" 
+                Content="Add 500XP"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                FontSize="30" Click="AddFiveHundredButton_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Page>

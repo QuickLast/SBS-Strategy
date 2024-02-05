@@ -35,5 +35,6 @@ namespace SBS_Game.Functions
                 return character;
             }              
         }
+
     }
 }

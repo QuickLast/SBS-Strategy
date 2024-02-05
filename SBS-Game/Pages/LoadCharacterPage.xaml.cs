@@ -17,23 +17,25 @@ using System.Windows.Shapes;
 namespace SBS_Game.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для WelcomePage.xaml
+    /// Логика взаимодействия для LoadCharacterPage.xaml
     /// </summary>
-    public partial class WelcomePage : Page
+    public partial class LoadCharacterPage : Page
     {
-        public WelcomePage()
+        public LoadCharacterPage()
         {
             InitializeComponent();
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ClassChoserPage());
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new LoadCharacterPage());
+            if (CRUD.GetCharacterByName(NameTBk.Text) != null)
+            {
+                NavigationService.Navigate(new MainPage(CRUD.GetCharacterByName(NameTBk.Text)));
+            }
+            else
+            {
+                ErrorTBk.Text = "There's no such character. Please try again.";
+            }
         }
     }
 }

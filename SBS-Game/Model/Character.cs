@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -10,8 +11,8 @@ namespace SBS_Game.Model
 {
     public class Character
     {
-        [BsonIgnore]
-        public int ObjectID { get; set; }
+        [BsonIgnoreIfDefault]
+        public ObjectId _id { get; set; }
         public string Name { get; set; }
         public string UnitClass { get; set; }
         public int StrengthP { get; set; }
@@ -23,6 +24,7 @@ namespace SBS_Game.Model
         public int VitalityP { get; set; }
         public int MaxVitalityP { get; set; }
         public int Level { get; set; }
+        public int XP { get; set; }
         public int Health { get; set; }
         public int Mana { get; set; }
         public int PDamage { get; set; }
@@ -49,6 +51,7 @@ namespace SBS_Game.Model
                 VitalityP = 25;
                 MaxVitalityP = 100;
                 Level = 0;
+                XP = 0;
                 Health = 2 * VitalityP + StrengthP;
                 Mana = IntelligenceP;
 
@@ -68,6 +71,7 @@ namespace SBS_Game.Model
                 VitalityP = 20;
                 MaxVitalityP = 80;
                 Level = 0;
+                XP = 0;
                 Health = (int)Math.Round(1.5 * VitalityP + 0.5 * StrengthP);
                 Mana = (int)Math.Round(1.2 * IntelligenceP);
 
@@ -87,6 +91,7 @@ namespace SBS_Game.Model
                 VitalityP = 15;
                 MaxVitalityP = 70;
                 Level = 0;
+                XP = 0;
                 Health = (int)Math.Round(1.4 * VitalityP + 0.2 * StrengthP);
                 Mana = (int)Math.Round(1.5 * IntelligenceP);
 
