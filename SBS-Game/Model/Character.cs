@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,7 +51,7 @@ namespace SBS_Game.Model
                 MaxIntelligenceP = 50;
                 VitalityP = 25;
                 MaxVitalityP = 100;
-                Level = 0;
+                Level = 1;
                 XP = 0;
                 Health = 2 * VitalityP + StrengthP;
                 Mana = IntelligenceP;
@@ -70,7 +71,7 @@ namespace SBS_Game.Model
                 MaxIntelligenceP = 70;
                 VitalityP = 20;
                 MaxVitalityP = 80;
-                Level = 0;
+                Level = 1;
                 XP = 0;
                 Health = (int)Math.Round(1.5 * VitalityP + 0.5 * StrengthP);
                 Mana = (int)Math.Round(1.2 * IntelligenceP);
@@ -90,7 +91,7 @@ namespace SBS_Game.Model
                 MaxIntelligenceP = 250;
                 VitalityP = 15;
                 MaxVitalityP = 70;
-                Level = 0;
+                Level = 1;
                 XP = 0;
                 Health = (int)Math.Round(1.4 * VitalityP + 0.2 * StrengthP);
                 Mana = (int)Math.Round(1.5 * IntelligenceP);
@@ -105,5 +106,7 @@ namespace SBS_Game.Model
                 throw new Exception("There's no such class.");
             }
         }
+
+        
     }
 }

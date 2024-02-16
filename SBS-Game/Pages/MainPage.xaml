@@ -61,18 +61,94 @@
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Name of your character:</TextBlock>
+        <Button Grid.Row="3" 
+                Grid.Column="6" 
+                Grid.ColumnSpan="2" 
+                Grid.RowSpan="2" 
+                Content="+"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                Name="AddStrengthBtn"
+                FontSize="30" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Click="AddStrengthBtn_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock Name="StrengthTBk" FontSize="30" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Strength:</TextBlock>
+        <Button Grid.Row="4" 
+                Grid.Column="6" 
+                Grid.ColumnSpan="2" 
+                Grid.RowSpan="2" 
+                Content="+"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                Name="AddDexterityBtn"
+                FontSize="30" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Click="AddDexterityBtn_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock Name="DexterityTBk" FontSize="30" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Dexterity:</TextBlock>
+        <Button Grid.Row="5" 
+                Grid.Column="6" 
+                Grid.ColumnSpan="2" 
+                Grid.RowSpan="2" 
+                Content="+"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                Name="AddIntelligenceBtn"
+                FontSize="30" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Click="AddIntelligenceBtn_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock Name="IntelligenceTBk" FontSize="30" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
                    Foreground="BlanchedAlmond">Intelligence:</TextBlock>
+        <Button Grid.Row="6" 
+                Grid.Column="6" 
+                Grid.ColumnSpan="2" 
+                Grid.RowSpan="2" 
+                Content="+"
+                FontWeight="Bold"
+                BorderBrush="Coral"
+                BorderThickness="2"
+                Foreground="Black"
+                Background="BlanchedAlmond"
+                Name="AddVitalityBtn"
+                FontSize="30" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Click="AddVitalityBtn_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock Name="VitalityTBk" FontSize="30" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="5" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Center" 
                    FontWeight="Bold"
