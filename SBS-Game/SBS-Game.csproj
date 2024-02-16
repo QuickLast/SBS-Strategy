@@ -156,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Character.cs" />
+    <Compile Include="Model\Dagger.cs" />
+    <Compile Include="Model\Weapon.cs" />
+    <Compile Include="Model\Wand.cs" />
     <Compile Include="Pages\ClassChoserPage.xaml.cs">
       <DependentUpon>ClassChoserPage.xaml</DependentUpon>
     </Compile>
